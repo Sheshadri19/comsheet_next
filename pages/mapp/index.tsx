@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { axiosInstance } from '@/Service/axiosInstance';
 import {Rootmaptable } from '@/Typescript/maptableinter';
-import { endpoint } from '../../pages/api/endpoint';
+import { endpoint } from '../api/endpoint';
 import { useQuery } from '@tanstack/react-query';
 import { Rootmap } from '@/Typescript/mapinter';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
@@ -120,7 +120,7 @@ console.log("table",tablemapData)
 
 //  map 
 
-const DynamicMap=dynamic (()=>import ('./googleMap'),{
+const DynamicMap=dynamic (()=>import ('../../components/map/googleMap'),{
   ssr:false
 })
 

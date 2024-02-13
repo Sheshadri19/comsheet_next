@@ -445,7 +445,7 @@ export default function Home() {
           </Grid>
 
           <Grid item xs={2}>
-            <Link href={'/map'}><Button variant="contained" sx={{ bgcolor: 'black' }}>Map View</Button></Link>
+            <Link href="/mapp"><Button variant="contained" sx={{ bgcolor: 'black' }}>Map View</Button></Link>
           </Grid>
           {/* Lease Data grid */}
           <Grid item xs={2} lg={2}>
